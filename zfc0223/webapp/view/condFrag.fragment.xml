@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+>
+    <Panel expandable="true" expanded="true">
+        <Toolbar>
+            <content>
+                <Title text="Condition Info" />
+                <ToolbarSpacer />
+                <Button icon="sap-icon://search" press="onSearch" />
+            </content>
+        </Toolbar>
+        <content>
+            <l:VerticalLayout>
+                <Label text="Condition" />
+                <l:HorizontalLayout>
+                    <Label text="Airline" />
+                    <Input id="inpCarrid" value="AA" />
+                </l:HorizontalLayout>
+                <l:HorizontalLayout>
+                    <Label text="Conn No" />
+                    <Input id="inpConnid" value="17" />
+                </l:HorizontalLayout>
+            </l:VerticalLayout>
+        </content>
+    </Panel>
+
+</core:FragmentDefinition>

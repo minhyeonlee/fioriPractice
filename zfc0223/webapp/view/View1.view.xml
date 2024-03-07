@@ -1,0 +1,16 @@
+<mvc:View controllerName="sync04.zfc0223.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+
+            <!-- condition Fragment 호출 -->
+            <core:Fragment fragmentName="sync04.zfc0223.view.condFrag" type="XML" />
+            <!-- Information Fragment 호출 -->
+            <core:Fragment fragmentName="sync04.zfc0223.view.infoFrag" type="XML" />
+
+        </content>
+    </Page>
+</mvc:View>
