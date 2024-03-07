@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
 >
-    <Input id="inpFrag" description="Frag Input" />
+    <Input id="inpCarrid" value="Frag Input" />
     <Button text="Frag Button" press="onFrag" />
 
     
