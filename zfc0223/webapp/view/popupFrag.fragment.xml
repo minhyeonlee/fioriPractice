@@ -4,7 +4,7 @@
     xmlns:l="sap.ui.layout"
 >
 
-    <Dialog id="diaInfo" title="Airport Info">
+    <Dialog id="diaInfo" title="Airport Info" contentWidth="700px" contentHeight="200px">
         <Panel expandable="false" expanded="true">
             <Toolbar>
                 <content>
@@ -17,11 +17,11 @@
 
                 <l:VerticalLayout>
                     <l:HorizontalLayout>
-                        <Label text="Departure" />
+                        <Label text="Departure" width="100px"/>
                         <Input value="JFK" editable="false" width="400px" description="New York JF Kennedy, USA" />
                     </l:HorizontalLayout>
                     <l:HorizontalLayout>
-                        <Label text="Arrival" />
+                        <Label text="Arrival" width="100px"/>
                         <Input value="SFO" editable="false" width="400px" description="San Francisco Int Apt, USA" />
                     </l:HorizontalLayout>
                 </l:VerticalLayout>

@@ -4,7 +4,7 @@
     xmlns:f="sap.ui.layout.form"
     xmlns:l="sap.ui.layout"
 >
-    <Panel expandable="true" expanded="true">
+    <Panel expandable="true" expanded="true" headerText="Test">
         <Toolbar>
             <content>
                 <Title text="Condition Info" />
@@ -14,14 +14,14 @@
         </Toolbar>
         <content>
             <l:VerticalLayout>
-                <Label text="Condition" />
+                <Title text="Condition"/>
                 <l:HorizontalLayout>
-                    <Label text="Airline" />
-                    <Input id="inpCarrid" value="AA" />
+                    <Label text="Airline" width="100px"/>
+                    <Input id="inpCarrid" value="AA"  width="200px"/>
                 </l:HorizontalLayout>
                 <l:HorizontalLayout>
-                    <Label text="Conn No" />
-                    <Input id="inpConnid" value="17" />
+                    <Label text="Conn No"  width="100px"/>
+                    <Input id="inpConnid" value="17"  width="200px"/>
                 </l:HorizontalLayout>
             </l:VerticalLayout>
         </content>
