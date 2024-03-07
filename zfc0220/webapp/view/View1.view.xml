@@ -37,21 +37,21 @@
                     <!-- Airline Container-->
                     <core:Title text="Airline Info" />
                     <Label text="Airline" />
-                        <Input value="AA" />
+                        <Input value="AA" editable="false" width="100px"/>
                         <Text text="American Airline" />
-                    <Label text="Currency" />
-                        <Input value="USD" />
+                    <Label text="Currency"/>
+                        <Input value="USD" editable="false" width="100px" />
                     <core:Title text="Flight schedule" />
                     <Label text="Flight Number" />
-                        <Input value="17" />
+                        <Input value="17" editable="false" width="100px" />
                     <Label text="City" />
-                        <Input value="NEW YORK" />
+                        <Input value="NEW YORK" editable="false" width="150px" />
                         <Text text="~" />
-                        <Input value="SAN FRANCISCO" />
+                        <Input value="SAN FRANCISCO" editable="false" width="150px" />
                     <Label text="Airport"/>
-                        <Input value="JFK" />
+                        <Input value="JFK" editable="false" width="150px"/>
                         <Text text="~" />
-                        <Input value="SFO" />
+                        <Input value="SFO" editable="false" width="150px"/>
                 </f:content>
             </f:SimpleForm>
         </content>
