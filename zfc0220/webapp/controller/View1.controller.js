@@ -20,7 +20,7 @@ sap.ui.define([
                 let sMesg = condCarrid + " Airline" + condConnid + " Connection Number";
                 // alert(sMesg);
                 MessageBox.show(sMesg, {
-                    title : "Information"
+                    title : "Information2"
                 });
             }
         });
