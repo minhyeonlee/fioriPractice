@@ -1,0 +1,7 @@
+<mvc:View controllerName="sync04.zfc0201.controller.View1"
+    xmlns:html="http://w3.org/1999/xhtml"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+</mvc:View>

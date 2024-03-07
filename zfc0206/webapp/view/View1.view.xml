@@ -1,0 +1,16 @@
+<mvc:View controllerName="sync04.zfc0206.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="check box, radio button">
+        <content>
+
+        <Text text="Text Element" />
+        <CheckBox id="chkBox1"
+                  text="Check Box"
+                  selected="true"
+                  select="onSelect" />
+    
+        </content>
+
+    </Page>
+</mvc:View>

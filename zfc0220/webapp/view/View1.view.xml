@@ -1,0 +1,24 @@
+<mvc:View controllerName="sync04.zfc0220.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- Condition -->
+            <Panel>
+                <Toolbar expandable="true" expanded="true">
+                    <content>
+                        <Title text = "Condition" />
+                        <ToolbarSpacer />
+                        <Button icon="sap-icon://search" press="onSearch" />
+                    </content>
+                </Toolbar>
+                <content>
+                    <Label text="Airline" />
+                    <Input id="inpCarrid" value="AA" />
+                    <Label text="Conn No" />
+                    <Input id="inpConnid" value="17" />
+                </content>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
