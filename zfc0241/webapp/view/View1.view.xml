@@ -18,6 +18,18 @@
                     <StandardListItem type="Active" title="{stdNo}" description="{sName}" />
                 </items>
             </List>
+
+            <!-- Second Model -->
+            <Button text="Student" press="onStd" />
+            <Button text="Class" press="onClass" />
+
+            <!-- Binding  -->
+            <!-- <List items="{2nd>/classList}" > -->
+            <List id="list2nd" items="{}" >
+                <items>
+                    <StandardListItem type="Active" title="{2nd>/key}" description="{2nd>/text}" />
+                </items>
+            </List>
         </content>
     </Page>
 </mvc:View>
