@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <Button text="1st" press="onDefault" />
-            <Input id="inpLastName" value="{/lastName}" />
+            <Input id="inpLastName" value="{empInfo>/lastName}" />
             <Input id="inpSkillName" value="{/skillName}" />
             <Button text="2nd" press="onGet" />
         </content>

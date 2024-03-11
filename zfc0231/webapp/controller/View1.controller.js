@@ -21,11 +21,15 @@ sap.ui.define([
                     lastName: "Lee"
                 };
                 let oModel = new JSONModel( oData );
-                this.getView().setModel( oModel );
+                this.getView().setModel( oModel , "empInfo" );
             },
             onGet: function(){
+                // let oView = this.getView();
+                // let oModel = oView.getModel();
+                // let oData = oModel.getData();
+                // alert( oData.lastName );
                 let oView = this.getView();
-                let oModel = oView.getModel();
+                let oModel = oView.getModel( "empInfo" ); //empInfo Model
                 let oData = oModel.getData();
                 alert( oData.lastName );
             }
