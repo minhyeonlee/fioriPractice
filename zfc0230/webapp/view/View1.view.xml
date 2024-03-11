@@ -4,8 +4,9 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <!-- Data Binding -->
+            <Button text="1st" press="onDefault" />
             <Input id="inpLastName" value="{/lastName}" />
-            <Text text="{/stdNo}" />
+            <Button text="2nd" press="onGet" />
         </content>
     </Page>
 </mvc:View>
