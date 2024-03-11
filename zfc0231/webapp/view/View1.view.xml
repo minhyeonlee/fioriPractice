@@ -1,0 +1,13 @@
+<mvc:View controllerName="sync04.zfc0231.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Button text="1st" press="onDefault" />
+            <Input id="inpLastName" value="{/lastName}" />
+            <Input id="inpSkillName" value="{/skillName}" />
+            <Button text="2nd" press="onGet" />
+        </content>
+        
+    </Page>
+</mvc:View>
