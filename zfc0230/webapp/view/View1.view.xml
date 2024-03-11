@@ -1,0 +1,11 @@
+<mvc:View controllerName="sync04.zfc0230.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- Data Binding -->
+            <Input id="inpLastName" value="{/lastName}" />
+            <Text text="{/stdNo}" />
+        </content>
+    </Page>
+</mvc:View>
