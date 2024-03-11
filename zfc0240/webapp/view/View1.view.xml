@@ -1,0 +1,35 @@
+<mvc:View controllerName="sync04.zfc0240.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- Data Binding -->
+            <Text text="{/lastName}" />
+            <Button text="2nd Model" press="onSetModel" />
+            <Text text="{2nd>/emp/lastName}" />
+
+            <!-- <List>
+                <items>
+                    <StandardListItem title="24040001" description="kang" />
+                    <StandardListItem title="24040002" description="Lee" />
+                </items>
+            </List> -->
+            
+            <Button text="search" press="onSearch" />
+            <ComboBox id="comboClass" items="{/classList}"
+                      selectedKey="400004" selectionChange="onSelectChange">
+                <items>
+                    <core:Item key="{class}" text="{cName}" />
+                    <!-- <core:Item key="400002" text="SYNC 2" /> -->
+                </items>
+            </ComboBox>
+
+            <List items="{/stdList}">
+                <items>
+                    <StandardListItem title="{stdNo}" description="{sName}" />
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
