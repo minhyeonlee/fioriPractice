@@ -1,14 +1,16 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel"
+    "sap/ui/model/json/JSONModel",
+    "sap/base/util/ObjectPath"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, JSONModel) {
+    function (Controller, JSONModel, ObjectPath) {
         "use strict";
 
         return Controller.extend("sync04.zfc0250.controller.View1", {
+
             onInit: function () {
                 let oData = {
                     classList:[
@@ -30,11 +32,18 @@ sap.ui.define([
                 this.getView().setModel( oModel );
             },
             onSelectChange: function( oEvent ){
-                let sPath = oEvent.getParameter("selectedItem").getBindingContext().getPath();
-                alert( sPath );
+                // let sPath = oEvent.getParameter("selectedItem").getBindingContext().getPath();
+                // let oListItem = this.getview().byId("searchBtn");
+                // oListItem.bindElement( btnPath );
+
+            },
+            onSearch: function () {
+                let sPath = this.getView().byId("comboClass").getSelectedItem().getBindingContext().getPath();
+                alert(sPath);
                 let oListItem = this.getView().byId("listInfo");
                 oListItem.bindElement( sPath );
             }
+
 
         });
     });

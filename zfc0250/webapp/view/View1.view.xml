@@ -6,17 +6,22 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <ComboBox id="comboClass" items="{/classList}"
-                      selectedKey="400004" selectionChange="onSelectChange">
+                      selectedKey="{/classList/0/class}" selectionChange="onSelectChange">
                 <items>
                     <core:Item key="{class}" text="{cName}"/>
                 </items>
             </ComboBox>
-            
+
+            <Button id="searchBtn" text="Search" press="onSearch"> </Button>
+
             <List id="listInfo" items="{stdList}">
                 <items>
                     <StandardListItem type="Active" title="{stdNo}" description="{sName}" />
                 </items>
             </List>
+
+            <!-- Detail Student Info -->
+            
         </content>
     </Page>
 </mvc:View>
