@@ -16,20 +16,21 @@ sap.ui.define([
                     classList:[
                         {   class: "400001", cName: "Sync 1",
                             stdList:[
-                                {   stdNo: "24040001", sName:"Lee1" },
-                                {   stdNo: "24040002", sName:"Seo1" }
+                                {   stdNo: "24040001", sName:"Lee1", genderCode:"2", gender:"Female" },
+                                {   stdNo: "24040002", sName:"Seo1", genderCode:"1", gender:"Male" }
 
                          ]},
                         {   class: "400004", cName: "Sync 4",
                             stdList:[
-                                {   stdNo: "24040041", sName:"Kang4" },
-                                {   stdNo: "24040042", sName:"Han4" }
+                                {   stdNo: "24040041", sName:"Kang4", genderCode:"1", gender:"Male" },
+                                {   stdNo: "24040042", sName:"Han4", genderCode:"2", gender:"Female"  }
                             ] }
                     ]
                 };
                 let oModel = new JSONModel();
                 oModel.setData( oData );
                 this.getView().setModel( oModel );
+
             },
             onSelectChange: function( oEvent ){
                 // let sPath = oEvent.getParameter("selectedItem").getBindingContext().getPath();
@@ -39,9 +40,20 @@ sap.ui.define([
             },
             onSearch: function () {
                 let sPath = this.getView().byId("comboClass").getSelectedItem().getBindingContext().getPath();
-                alert(sPath);
                 let oListItem = this.getView().byId("listInfo");
                 oListItem.bindElement( sPath );
+                
+                //detail info clear
+                let oDetailItem = this.getView().byId("stdInfo"); 
+                oDetailItem.bindElement("clear"); 
+                oDetailItem.setExpanded(false);
+            },
+            onListPress: function( oEvent ){
+                let sPath = oEvent.getParameter("listItem").getBindingContextPath();
+                let oDetailItem = this.getView().byId("stdInfo"); 
+                oDetailItem.bindElement( sPath );   
+                oDetailItem.setExpanded(true);         
+                //oListItem.setProperty("expanded", true);
             }
 
 

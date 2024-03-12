@@ -14,13 +14,16 @@
 
             <Button id="searchBtn" text="Search" press="onSearch"> </Button>
 
-            <List id="listInfo" items="{stdList}">
+            <List id="listInfo" items="{stdList}" itemPress="onListPress">
                 <items>
                     <StandardListItem type="Active" title="{stdNo}" description="{sName}" />
                 </items>
             </List>
 
-            <!-- Detail Student Info -->
+            <!-- Detail Student Info Fragment 호출-->
+            <core:Fragment fragmentName="sync04.zfc0250.view.stdInfoFrag"
+                            type="XML"/>
+
             
         </content>
     </Page>
