@@ -1,0 +1,23 @@
+<mvc:View controllerName="sync.zfc0260.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- Class List -->
+            <Table items="{/esClassSet}">
+                <columns>
+                    <Column><header> <Text text="Class ID" /></header></Column>
+                    <Column><header> <Text text="Class Name" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{Class}" />
+                            <Text text="{Cname}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
