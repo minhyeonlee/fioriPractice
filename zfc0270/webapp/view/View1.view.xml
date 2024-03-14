@@ -1,0 +1,35 @@
+<mvc:View controllerName="sync04.zfc0270.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+ <Page id="page" title="{i18n>title}">
+        <content>
+            <Table items="{/data}">
+                <columns>
+                    <Column><header><Text text= "carrId" /></header></Column>
+                    <Column><header><Text text= "carrName" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem press="onClick" type="Active">
+                        <cells>
+                            <Text text="{carrier/carrId}" />
+                            <Text text="{carrier/carrName}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            
+            <Table id="connection" items="{connections}">
+                <columns>
+                    <Column><header><Text text="connid" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                         <cells>
+                            <Text text="{connId}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
